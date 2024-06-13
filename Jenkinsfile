@@ -14,7 +14,8 @@ pipeline {
 
         stage('Starting container'){
             steps {
-                sh 'docker-compose -f docker-compose.yaml -p test build'
+                sh 'docker-compose -f docker-compose.yaml -p testu build'
+                sh 'docker-compose -f docker-compose.yaml -p testu up -d'
                 sh 'docker-compose ps'
             }
         }
