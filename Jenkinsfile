@@ -22,7 +22,7 @@ pipeline {
 
         stage('Testing against the container'){
             steps {
-                sh 'curl http://localhost:3000/param?query=demo | jq'
+                sh 'curl http://194.238.19.169:3000/param?query=demo | jq'
             }
         }
     }
