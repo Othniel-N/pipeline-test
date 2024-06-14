@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'docker-compose' }
     stages {
-        stage("Verifying installation"){
+        stage("Verifying installations"){
             steps {
                 sh '''
                   docker version
